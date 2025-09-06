@@ -1,0 +1,69 @@
+body {
+    background-color: darkturquoise;
+    font-family: sans-serif;
+}
+
+#main-content {
+    background-color: white;
+    width: 80%;
+    max-width: 500px;
+    margin: 25px auto 25px;
+    padding: 10px 40px 10px;
+    text-align: center;
+    border-color: gray;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+#main-content h1 {
+    margin-bottom: 5px;
+}
+
+#name {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+#main-content hr {
+    background-color: black;
+    border-color: black;
+}
+
+.main-topic h2 {
+    font-size: 26px;
+}
+
+.main-topic h3 {
+    font-size: 22px;
+}
+
+.topic {
+    border-style: solid;
+    border-color: teal;
+    border-width: 2px;
+    margin-bottom: 10px;
+    border-radius: 18px;
+    background-color: whitesmoke;
+}
+
+.topic h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.topic a {
+  color: teal;
+}
+
+.topic a:visited {
+  color: teal;
+}
+
+.topic a:hover {
+  color: lightseagreen;
+}
+
+.topic a:active {
+  color: lightseagreen;
+}
