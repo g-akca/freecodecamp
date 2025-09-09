@@ -1,0 +1,26 @@
+#main {
+  text-align: center;
+  background-color: lavender;
+  padding: 15px 10px;
+  font-family: sans-serif;
+  color: rgb(54, 54, 54);
+  margin-top: 25px;
+}
+
+#img-div {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.wiki {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
