@@ -1,0 +1,109 @@
+:root {
+  --color0: white;
+  --color1: rgb(200, 255, 200);
+  --color2: rgb(130, 255, 130);
+  --color3: rgb(30, 255, 30);
+  --color4: rgb(2, 177, 2);
+  --color5: rgb(0, 121, 0);
+  --solid-border: solid 1px black;
+  --dashed-border: dashed 1px black;
+}
+
+body {
+  background-color: rgb(210, 238, 210);
+  font-family: sans-serif;
+}
+
+table, #legend {
+  margin: 125px auto;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.available-0 {
+  background-color: var(--color0);
+}
+
+.available-1 {
+  background-color: var(--color1);
+}
+
+.available-2 {
+  background-color: var(--color2);
+}
+
+.available-3 {
+  background-color: var(--color3);
+}
+
+.available-4 {
+  background-color: var(--color4);
+}
+
+.available-5 {
+  background-color: var(--color5);
+}
+
+.sharp td {
+  border-bottom: var(--solid-border);
+}
+
+.sharp th:not([class="time"]) {
+    border-bottom: var(--solid-border);
+}
+
+.half td {
+  border-bottom: var(--dashed-border);
+}
+
+.sharp td, .half td {
+  border-left: var(--solid-border);
+  border-right: var(--solid-border);
+}
+
+th[class="time"] {
+  padding-right: 5px;
+}
+
+td {
+  width: 85px;
+  height: 20px;
+}
+
+#legend {
+  width: 200px;
+}
+
+#availability {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+}
+
+#container span {
+  display: inline-block;
+  width: 40%;
+  text-align: center;
+}
+
+#legend-gradient {
+  width: 100%;
+  height: 20px;
+  background-image: linear-gradient(
+    90deg,
+    var(--color0) 0% 16%,
+    var(--color1) 16% 33%,
+    var(--color2) 33% 49%,
+    var(--color3) 49% 65%,
+    var(--color4) 65% 82%,
+    var(--color5) 82% 100%
+  );
+  border: 1px solid black;
+}
