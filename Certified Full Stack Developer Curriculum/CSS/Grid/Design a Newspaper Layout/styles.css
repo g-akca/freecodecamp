@@ -1,0 +1,67 @@
+main {
+  padding: 8px;
+  font-family: Georgia, serif;
+}
+
+.title {
+  grid-area: title;
+  background-color: rgb(60, 60, 60);
+  color: white;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+.feature-article, .secondary-article {
+  background-color: rgb(235, 235, 235);
+  padding: 15px;
+}
+
+.feature-article {
+  grid-area: feature-article;
+}
+
+.secondary-article {
+  grid-area: secondary-article;
+}
+
+.cover-image {
+  grid-area: cover-image;
+  display: flex;
+  align-items: center;
+  background-color: rgb(181, 181, 181);
+  margin: 0;
+  padding: 20px;
+}
+
+.small-article1, .small-article2, .small-article3 {
+  background-color: rgb(215, 215, 215);
+  padding: 15px;
+}
+
+.small-article1 {
+  grid-area: small-article1;
+}
+
+.small-article2 {
+  grid-area: small-article2;
+}
+
+.small-article3 {
+  grid-area: small-article3;
+}
+
+.newspaper-layout {
+  display: grid;
+  grid-template-areas: "title title title"
+    "feature-article feature-article cover-image"
+    "secondary-article secondary-article cover-image"
+    "small-article1 small-article2 small-article3";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.cover-image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
