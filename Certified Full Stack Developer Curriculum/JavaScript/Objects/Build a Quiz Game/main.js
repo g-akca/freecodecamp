@@ -28,7 +28,7 @@ const questions = [
     question: "Who painted the Mona Lisa?",
     choices: ["Wolfgang Amadeus Mozart", "Mochizuki Honami", "Leonardo da Vinci"],
     answer: "Leonardo da Vinci"
-  },
+  }
 ]
 
 function getRandomQuestion(questions) {
