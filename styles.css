@@ -5,7 +5,7 @@ body {
 
 #main-content {
     background-color: white;
-    max-width: 1000px;
+    max-width: 1200px;
     width: 80%;
     margin: 25px auto 25px;
     padding: 10px 40px 10px;
@@ -74,4 +74,21 @@ body {
 
 .topic a:active {
   color: lightseagreen;
+}
+
+.workshop-badge, .lab-badge {
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    margin-left: 6px;
+}
+
+.workshop-badge {
+    border: 1px solid rgb(89, 147, 255);
+    color: rgb(89, 147, 255);
+}
+
+.lab-badge {
+    border: 1px solid rgb(109, 173, 107);
+    color: rgb(109, 173, 107);
 }
