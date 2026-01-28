@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  background-color: rgb(210, 210, 210);
+  padding: 10px 0;
+  margin-top: 0;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.gallery-item {
+  cursor: pointer;
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.lightbox {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox-image {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+#close-btn {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 3em;
+}
