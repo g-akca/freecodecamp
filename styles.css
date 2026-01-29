@@ -62,6 +62,7 @@ body {
 
 .topic a {
   color: teal;
+  text-decoration: none;
 }
 
 .topic a:visited {
@@ -77,18 +78,18 @@ body {
 }
 
 .workshop-badge, .lab-badge {
-    padding: 3px 6px;
+    padding: 3px 8px;
     border-radius: 4px;
     font-size: 0.8em;
     margin-left: 6px;
 }
 
 .workshop-badge {
-    border: 1px solid rgb(89, 147, 255);
-    color: rgb(89, 147, 255);
+    background-color: rgb(85, 181, 236);
+    color: white;
 }
 
 .lab-badge {
-    border: 1px solid rgb(109, 173, 107);
-    color: rgb(109, 173, 107);
+    background-color: rgb(126, 204, 96);
+    color: white;
 }
