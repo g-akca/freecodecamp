@@ -4,18 +4,20 @@ body {
   align-items: center;
   background-color: rgb(49, 61, 90);
   font-family: sans-serif;
-  padding-top: 35px;
+  padding-top: 6vh;
 }
 
 #title {
   color: rgba(255, 255, 255, 0.95);
   text-shadow: 2px 4px black;
+  margin-top: 0;
 }
 
 #drum-machine {
   background-color: lightgray;
   width: 300px;
   justify-content: center;
+  box-shadow: 4px 4px 3px 3px rgba(0, 0, 0, 0.175);
 }
 
 #pad-bank {
@@ -36,4 +38,20 @@ body {
   margin: 18px;
   color: rgba(255, 255, 255, 0.863);
   border-radius: 6px;
+  padding: 12px;
+}
+
+@media (min-width: 1240px) {
+  #drum-machine {
+    width: 450px;
+    font-size: 1.6em;
+  }
+
+  #title {
+    font-size: 2.4em;
+  }
+
+  .drum-pad {
+    height: 125px;
+  }
 }
