@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(49, 61, 90);
+  font-family: sans-serif;
+  padding-top: 35px;
+}
+
+#title {
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 2px 4px black;
+}
+
+#drum-machine {
+  background-color: lightgray;
+  width: 300px;
+  justify-content: center;
+}
+
+#pad-bank {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 12px;
+  padding: 18px;
+}
+
+.drum-pad {
+  height: 80px;
+  font-size: 1.4em;
+}
+
+#display {
+  text-align: center;
+  background-color: rgb(86, 86, 86);
+  margin: 18px;
+  color: rgba(255, 255, 255, 0.863);
+  border-radius: 6px;
+}
