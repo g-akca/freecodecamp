@@ -64,7 +64,7 @@ const displayCatalog = () => {
     return catalogString
 }
 const displayPlantsSet = () => {
-    const commonNames = Array.from(catalog.keys().map(key => key.commonName));
+    const commonNames = catalog.keys().map(key => key.commonName);
     const catalogSet = new Set(commonNames);
     return catalogSet
 };
