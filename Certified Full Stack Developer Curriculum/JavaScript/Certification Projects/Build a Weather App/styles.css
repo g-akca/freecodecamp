@@ -1,7 +1,11 @@
 body {
   font-family: georgia, sans-serif;
   padding: 20px;
+  background-color: rgb(246, 236, 236);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #selection-div {
@@ -22,14 +26,30 @@ body {
 }
 
 #weather-wrap {
-  background-color: rgb(91, 91, 125);
+  background-color: rgb(120, 120, 154);
   width: 100%;
-  height: 280px;
+  max-width: 600px;
+  height: 230px;
   padding: 20px;
   box-sizing: border-box;
+  border-radius: 12px;
+  border: 3px solid black;
 }
 
 #weather-div {
   display: none;
   color: white;
+}
+
+#condition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+#location {
+  margin-right: 24px;
 }

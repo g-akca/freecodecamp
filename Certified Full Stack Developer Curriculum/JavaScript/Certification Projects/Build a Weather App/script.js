@@ -38,8 +38,8 @@ async function showWeather(city) {
     humidity.textContent = `Humidity: ${valueOrNA(data.main.humidity)}%`;
     wind.textContent = `Wind: ${valueOrNA(data.wind.speed)} m/s`;
     windGust.textContent = `Wind gust: ${valueOrNA(data.wind.gust)} m/s`;
-    weatherMain.textContent = `Conditions: ${valueOrNA(data.weather[0].main)}`;
-    locationEl.textContent = `Location: ${valueOrNA(data.name)}`;
+    weatherMain.textContent = valueOrNA(data.weather[0].main);
+    locationEl.textContent = valueOrNA(data.name);
   }
   catch (error) {
     alert("Something went wrong, please try again later");
