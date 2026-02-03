@@ -3,6 +3,10 @@ body {
     font-family: "Outfit", sans-serif;
 }
 
+[hidden] {
+    display: none !important;
+}
+
 #main-content {
     background-color: white;
     max-width: 1200px;
@@ -14,44 +18,63 @@ body {
     box-shadow: 0px 8px 8px 8px rgba(0, 0, 0, 0.1);
 }
 
-#main-content header h1 {
+header h1 {
     margin-bottom: 5px;
 }
 
-#main-content header #name {
+header #name {
     margin-top: 5px;
     font-weight: bold;
 }
 
-#main-content hr {
+header hr {
     background-color: black;
     border-color: black;
 }
 
-#main-content h2 {
+header h2 {
     font-size: 26px;
     margin-bottom: 0;
 }
 
-#main-content #grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
+#tabs {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
 }
 
-.main-topic h3 {
+#tabs button {
+    background-color: white;
+    font-family: inherit;
+    padding: 6px 12px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#tabs button[aria-selected="true"] {
+    background-color: gray;
+}
+
+#grid-container h3 {
     font-size: 22px;
     text-decoration: underline;
 }
 
+.main-topic {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
 .topic {
-    border-style: solid;
-    border-color: teal;
-    border-width: 2px;
+    border: 2px solid teal;
     margin-bottom: 10px;
     border-radius: 18px;
     background-color: whitesmoke;
     padding: 0 20px;
+    width: 325px;
 }
 
 .topic h4 {
@@ -61,20 +84,20 @@ body {
 }
 
 .topic a {
-  color: teal;
-  text-decoration: none;
+    color: teal;
+    text-decoration: none;
 }
 
 .topic a:visited {
-  color: teal;
+    color: teal;
 }
 
 .topic a:hover {
-  color: lightseagreen;
+    color: lightseagreen;
 }
 
 .topic a:active {
-  color: lightseagreen;
+    color: lightseagreen;
 }
 
 .workshop-badge, .lab-badge {

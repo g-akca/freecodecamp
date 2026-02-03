@@ -14,15 +14,23 @@
             <header>
                 <h1>freeCodeCamp Projects</h1>
                 <p id="name">by g-akca</p>
-            </header>
-            <main>
                 <p>You can find a list of my freeCodeCamp projects & practices below and navigate through them. (WIP)</p>
                 <hr>
+
                 <h2>Certified Full Stack Developer Curriculum</h2>
-                <section id="grid-container">
-                    <section class="main-topic">
-                        <h3>HTML</h3>
-                        <section class="topic">
+                <div id="tabs" role="tablist">
+                    <button role="tab" aria-controls="panel-html" aria-selected="true" id="tab-html">HTML</button>
+                    <button role="tab" aria-controls="panel-css" aria-selected="false" id="tab-css">CSS</button>
+                    <button role="tab" aria-controls="panel-js" aria-selected="false" id="tab-js">JavaScript</button>
+                </div>
+            </header>
+            
+            <main>
+                <div id="grid-container">
+                    <h3>HTML</h3>
+
+                    <div class="main-topic" id="panel-html" role="tabpanel" aria-labelledby="tab-html">
+                        <div class="topic">
                             <h4>Basic HTML</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/HTML/Basic HTML/Build a Curriculum Outline/index.html">Build a Curriculum Outline</a> <span class="workshop-badge">Workshop</span></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/HTML/Basic HTML/Debug Camperbot's Profile Page/index.html">Debug Camperbot's Profile Page</a> <span class="lab-badge">Lab</span></p>
@@ -36,21 +44,21 @@
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/HTML/Basic HTML/Build a Heart Icon/index.html">Build a Heart Icon</a> <span class="workshop-badge">Workshop</span></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/HTML/Basic HTML/Build a Video Display Using iframe/index.html">Build a Video Display Using iframe</a> <span class="workshop-badge">Workshop</span></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/HTML/Basic HTML/Build a Video Compilation Page/index.html">Build a Video Compilation Page</a> <span class="lab-badge">Lab</span></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Semantic HTML</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/HTML/Semantic HTML/Build a List of Major Web Browsers/index.html">Build a List of Major Web Browsers</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/HTML/Semantic HTML/Build Quincy's Job Tips Page/index.html">Build Quincy's Job Tips Page</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/HTML/Semantic HTML/Build a Cat Blog Page/index.html">Build a Cat Blog Page</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/HTML/Semantic HTML/Build an Event Hub/index.html">Build an Event Hub</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Forms and Tables</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/HTML/Forms and Tables/Build a Hotel Feedback Form/index.html">Build a Hotel Feedback Form</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/HTML/Forms and Tables/Build a Final Exams Table/index.html">Build a Final Exams Table</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/HTML/Forms and Tables/Build a Book Catalog Table/index.html">Build a Book Catalog Table</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Accessibility</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/HTML/Accessibility/Debug a Coding Journey Blog Page/index.html">Debug a Coding Journey Blog Page</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/HTML/Accessibility/Build a Tech Conference Schedule Table/index.html">Build a Tech Conference Schedule Table</a></p>
@@ -59,106 +67,104 @@
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/HTML/Accessibility/Build a Checkout Page/index.html">Build a Checkout Page</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/HTML/Accessibility/Design a Movie Review Page/index.html">Design a Movie Review Page</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/HTML/Accessibility/Build a Multimedia Player/index.html">Build a Multimedia Player</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Certification Projects</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/HTML/Certification Projects/Build a Survey Form/index.html">Build a Survey Form</a></p>
-                        </section>
-                    </section>
+                        </div>
+                    </div>
 
-                    <section class="main-topic">
-                        <h3>CSS</h3>
-                        <section class="topic">
+                    <div class="main-topic" id="panel-css" role="tabpanel" aria-labelledby="tab-css" hidden>
+                        <div class="topic">
                             <h4>Basic CSS</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Basic CSS/Design a Cafe Menu/index.html">Design a Cafe Menu</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Basic CSS/Design a Business Card/index.html">Design a Business Card</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Basic CSS/Build a Stylized To-Do List/index.html">Build a Stylized To-Do List</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Basic CSS/Design a Blog Post Card">Design a Blog Post Card</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Absolute and Relative Units</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Absolute and Relative Units/Build an Event Flyer Page/index.html">Build an Event Flyer Page</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Pseudo Classes and Elements</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Pseudo Classes and Elements/Design a Greeting Card/index.html">Design a Greeting Card</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Pseudo Classes and Elements/Design a Parent Teacher Conference Form/index.html">Design a Parent Teacher Conference Form</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Pseudo Classes and Elements/Build a Job Application Form/index.html">Build a Job Application Form</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Colors</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Colors/Build a Set of Colored Markers/index.html">Build a Set of Colored Markers</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Colors/Design a Set of Colored Boxes/index.html">Design a Set of Colored Boxes</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Styling Forms</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Styling Forms/Design a Registration Form/index.html">Design a Registration Form</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Styling Forms/Design a Contact Form/index.html">Design a Contact Form</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Styling Forms/Build a Game Settings Panel/index.html">Build a Game Settings Panel</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Styling Forms/Design a Feature Selection Page/index.html">Design a Feature Selection Page</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>The Box Model</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/The Box Model/Design a Rothko Painting/index.html">Design a Rothko Painting</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/The Box Model/Build a Confidential Email Page/index.html">Build a Confidential Email Page</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Flexbox</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Flexbox/Build a Flexbox Photo Gallery/index.html">Build a Flexbox Photo Gallery</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Flexbox/Design a Pricing Plans Layout Page/index.html">Design a Pricing Plans Layout Page</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Typography</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Typography/Build a Nutritional Label/index.html">Build a Nutritional Label</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Typography/Build a Newspaper Article/index.html">Build a Newspaper Article</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Accessibility</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Accessibility/Build a Quiz Webpage/index.html">Build a Quiz Webpage</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Accessibility/Build a Tribute Page/index.html">Build a Tribute Page</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Positioning</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Positioning/Build a Cat Painting/index.html">Build a Cat Painting</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Positioning/Build a House Painting/index.html">Build a House Painting</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Attribute Selectors</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Attribute Selectors/Build a Balance Sheet/index.html">Build a Balance Sheet</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Responsive Design</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Responsive Design/Design a Piano/index.html">Design a Piano</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Variables</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Variables/Build a City Skyline/index.html">Build a City Skyline</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Variables/Build an Availability Table/index.html">Build an Availability Table</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Grid</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Grid/Build a Magazine/index.html">Build a Magazine</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Grid/Design a Newspaper Layout/index.html">Design a Newspaper Layout</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Animations</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Animations/Build an Animated Ferris Wheel/index.html">Build an Animated Ferris Wheel</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Animations/Build a Moon Orbit/index.html">Build a Moon Orbit</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Animations/Build a Flappy Penguin/index.html">Build a Flappy Penguin</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Animations/Build a Personal Portfolio/index.html">Build a Personal Portfolio</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Certification Projects</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Certification Projects/Build a Page of Playing Cards/index.html">Build a Page of Playing Cards</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Certification Projects/Build a Book Inventory App/index.html">Build a Book Inventory App</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Certification Projects/Build a Technical Documentation Page/index.html">Build a Technical Documentation Page</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/Responsive Web Design/CSS/Certification Projects/Build a Product Landing Page/index.html">Build a Product Landing Page</a></p>
-                        </section>
-                    </section>
+                        </div>
+                    </div>
 
-                    <section class="main-topic">
-                        <h3>JavaScript</h3>
-                        <section class="topic">
+                    <div class="main-topic" id="panel-js" role="tabpanel" aria-labelledby="tab-js" hidden>
+                        <div class="topic">
                             <h4>Variables and Strings</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Variables and Strings/Build a Greeting Bot/script.js">Build a Greeting Bot</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Variables and Strings/Build a JavaScript Trivia Bot/script.js">Build a JavaScript Trivia Bot</a></p>
@@ -167,16 +173,16 @@
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Variables and Strings/Build a String Inspector/script.js">Build a String Inspector</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Variables and Strings/Build a String Formatter/script.js">Build a String Formatter</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Variables and Strings/Build a String Transformer/script.js">Build a String Transformer</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Booleans and Numbers</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Booleans and Numbers/Debug Type Coercion Errors in a Buggy App/script.js">Debug Type Coercion Errors in a Buggy App</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Booleans and Numbers/Debug Increment and Decrement Operator Errors in a Buggy App/script.js">Debug Increment and Decrement Operator Errors in a Buggy App</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Booleans and Numbers/Build a Logic Checker App/script.js">Build a Logic Checker App</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Booleans and Numbers/Build a Mathbot/script.js">Build a Mathbot</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Booleans and Numbers/Build a Fortune Teller/script.js">Build a Fortune Teller</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Functions</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Functions/Build a Calculator/script.js">Build a Calculator</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Functions/Build a Boolean Check Function/script.js">Build a Boolean Check Function</a></p>
@@ -187,20 +193,20 @@
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Functions/Build a Leap Year Calculator/script.js">Build a Leap Year Calculator</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Functions/Implement the Truncate String Algorithm/script.js">Implement the Truncate String Algorithm</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Functions/Build a Confirm the Ending Tool/script.js">Build a Confirm the Ending Tool</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Arrays</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Arrays/Build a Shopping List/script.js">Build a Shopping List</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Arrays/Build a Lunch Picker Program/script.js">Build a Lunch Picker Program</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Arrays/Build a Golf Score Translator/script.js">Build a Golf Score Translator</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Objects</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Objects/Build a Recipe Tracker/script.js">Build a Recipe Tracker</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Objects/Build a Quiz Game/script.js">Build a Quiz Game</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Objects/Build a Record Collection/script.js">Build a Record Collection</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Loops</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Loops/Build a Sentence Analyzer/script.js">Build a Sentence Analyzer</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Loops/Build a Longest Word Finder App/script.js">Build a Longest Word Finder App</a></p>
@@ -210,8 +216,8 @@
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Loops/Build a Profile Lookup/script.js">Build a Profile Lookup</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Loops/Build a String Repeating Function/script.js">Build a String Repeating Function</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Loops/Build a Missing Letter Detector/script.js">Build a Missing Letter Detector</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>JavaScript Fundamentals Review</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/JavaScript Fundamentals Review/Build a String Inverter/script.js">Build a String Inverter</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/JavaScript Fundamentals Review/Build the Largest Number Finder/script.js">Build the Largest Number Finder</a></p>
@@ -229,8 +235,8 @@
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/JavaScript Fundamentals Review/Implement an HTML Entity Converter/script.js">Implement an HTML Entity Converter</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/JavaScript Fundamentals Review/Build an Odd Fibonacci Sum Calculator/script.js">Build an Odd Fibonacci Sum Calculator</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/JavaScript Fundamentals Review/Implement an Element Skipper/script.js">Implement an Element Skipper</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Higher Order Functions and Callbacks</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Higher Order Functions and Callbacks/Build a Library Manager/script.js">Build a Library Manager</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Higher Order Functions and Callbacks/Build a Book Organizer/script.js">Build a Book Organizer</a></p>
@@ -242,8 +248,8 @@
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Higher Order Functions and Callbacks/Implement a Range-Based LCM Calculator/script.js">Implement a Range-Based LCM Calculator</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Higher Order Functions and Callbacks/Create a Deep Flattening Tool/script.js">Create a Deep Flattening Tool</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Higher Order Functions and Callbacks/Build an All-True Property Validator/script.js">Build an All-True Property Validator</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>DOM Manipulation and Events</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/DOM Manipulation and Events/Build a Storytelling App/index.html">Build a Storytelling App</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/DOM Manipulation and Events/Build an Emoji Reactor/index.html">Build an Emoji Reactor</a></p>
@@ -253,18 +259,18 @@
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/DOM Manipulation and Events/Build a Lightbox Viewer/index.html">Build a Lightbox Viewer</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/DOM Manipulation and Events/Build a Rock, Paper, Scissors Game/index.html">Build a Rock, Paper, Scissors Game</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/DOM Manipulation and Events/Build a Set of Football Team Cards/index.html">Build a Set of Football Team Cards</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>JavaScript and Accessibility</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/JavaScript and Accessibility/Build a Planets Tablist/index.html">Build a Planets Tablist</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/JavaScript and Accessibility/Build a Note Taking App/index.html">Build a Note Taking App</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/JavaScript and Accessibility/Build a Theme Switcher/index.html">Build a Theme Switcher</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Debugging</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Debugging/Debug a Random Background Color Changer/index.html">Debug a Random Background Color Changer</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Basic Regex</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Basic Regex/Build a Spam Filter/index.html">Build a Spam Filter</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Basic Regex/Build a Palindrome Checker/index.html">Build a Palindrome Checker</a></p>
@@ -272,64 +278,66 @@
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Basic Regex/Implement a Spinal Case Converter/script.js">Implement a Spinal Case Converter</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Basic Regex/Implement a Pig Latin Translator/script.js">Implement a Pig Latin Translator</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Basic Regex/Build a Smart Word Replacement Function/script.js">Build a Smart Word Replacement Function</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Form Validation</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Form Validation/Build a Calorie Counter/index.html">Build a Calorie Counter</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Form Validation/Build a Customer Complaint Form/index.html">Build a Customer Complaint Form</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Dates</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Dates/Build a Date Conversion Program/script.js">Build a Date Conversion Program</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Audio and Video Events</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Audio and Video Events/Build a Music Player/index.html">Build a Music Player</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Maps and Sets</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Maps and Sets/Build a Plant Nursery Catalog/script.js">Build a Plant Nursery Catalog</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>localStorage and CRUD Operations</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/localStorage and CRUD Operations/Build a Todo App using Local Storage/index.html">Build a Todo App using Local Storage</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/localStorage and CRUD Operations/Build a Bookmark Manager App/index.html">Build a Bookmark Manager App</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Classes</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Classes/Build a Shopping Cart/index.html">Build a Shopping Cart</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Classes/Build a Project Idea Board/script.js">Build a Project Idea Board</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Recursion</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Recursion/Build a Countup/script.js">Build a Countup</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Recursion/Build a Countdown/script.js">Build a Countdown</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Recursion/Build a Range of Numbers Generator/script.js">Build a Range of Numbers Generator</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Recursion/Build a Decimal to Binary Converter/index.html">Build a Decimal to Binary Converter</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Recursion/Build a Permutation Generator/script.js">Build a Permutation Generator</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Functional Programming</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Functional Programming/Build a Recipe Ingredient Converter/index.html">Build a Recipe Ingredient Converter</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Functional Programming/Build an Optional Arguments Sum Function/script.js">Build an Optional Arguments Sum Function</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Functional Programming/Build a Sorting Visualizer/index.html">Build a Sorting Visualizer</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Asynchronous JavaScript</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Asynchronous JavaScript/Build an fCC Authors Page/index.html">Build an fCC Authors Page</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Asynchronous JavaScript/Build an fCC Forum Leaderboard/index.html">Build an fCC Forum Leaderboard</a></p>
-                        </section>
-                        <section class="topic">
+                        </div>
+                        <div class="topic">
                             <h4>Certification Projects</h4>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Certification Projects/Build a Markdown to HTML Converter/index.html">Build a Markdown to HTML Converter</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Certification Projects/Build a Drum Machine/index.html">Build a Drum Machine</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Certification Projects/Build a Voting System/script.js">Build a Voting System</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Certification Projects/Build a Bank Account Management Program/script.js">Build a Bank Account Management Program</a></p>
                             <p><a href="./Certified Full Stack Developer Curriculum/JavaScript/Certification Projects/Build a Weather App/index.html">Build a Weather App</a></p>
-                        </section>
-                    </section>
-                </section>
+                        </div>
+                    </div>
+                </div>
             </main>
         </div>
+
+        <script src="script.js"></script>
     </body>
 </html>
