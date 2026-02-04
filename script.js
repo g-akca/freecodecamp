@@ -1,6 +1,6 @@
 const tabs = document.querySelectorAll('[role="tab"]');
 const panels = document.querySelectorAll('[role="tabpanel"]');
-const title = document.querySelector("#grid-container h3");
+const title = document.getElementById("main-topic-title");
 
 const loadedContent = {};
 
@@ -11,6 +11,7 @@ async function loadTabContent(tabCtrl) {
   
   try {
     const response = await fetch(`./tabs/${tabCtrl}.html`);
+    if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
     const html = await response.text();
     panel.innerHTML = html;
     loadedContent[tabCtrl] = true;
