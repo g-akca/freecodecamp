@@ -94,20 +94,27 @@ header h2 {
     text-align: center;
 }
 
-.topic a {
+.project {
+    display: flex;
+    gap: 4px;
+    margin: 16px 0;
+    align-items: center;
+}
+
+.project a {
     color: teal;
     text-decoration: none;
 }
 
-.topic a:visited {
+.project a:visited {
     color: teal;
 }
 
-.topic a:hover {
+.project a:hover {
     color: lightseagreen;
 }
 
-.topic a:active {
+.project a:active {
     color: lightseagreen;
 }
 
@@ -116,6 +123,7 @@ header h2 {
     border-radius: 4px;
     font-size: 0.8em;
     margin-left: 6px;
+    flex-grow: 0;
 }
 
 .workshop-badge {
