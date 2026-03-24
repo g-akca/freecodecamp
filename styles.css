@@ -49,6 +49,7 @@ header h2 {
 #tabs {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 12px;
     margin-top: 20px;
 }
