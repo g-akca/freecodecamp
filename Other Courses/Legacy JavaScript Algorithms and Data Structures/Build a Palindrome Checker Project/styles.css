@@ -1,0 +1,32 @@
+body {
+  background-color: rgb(212, 204, 91);
+  padding-top: 20vh;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+#text-input {
+  display: block;
+  width: 300px;
+}
+
+#check-btn {
+  display: block;
+  background-color: rgb(234, 228, 170);
+  border: 1px solid rgb(96, 95, 95);
+  padding: 6px 12px;
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px black;
+  cursor: pointer;
+}
+
+#check-btn:hover {
+  background-color: rgb(255, 221, 0);
+}
